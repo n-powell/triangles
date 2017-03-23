@@ -5,16 +5,19 @@ $(function() {
     var side2 = parseInt($("input#side2").val ());
     var side3 = parseInt($("input#side3").val ());
     if (side1 === side2 && side1 === side3) {
-      $(".output").text("Equilateral")
+      $(".output").text("Equilateral");
     }
     else if ((side1 === side2 && side1 + side2 >= side3) || (side2 === side3 && side2 + side3 >= side1) || (side1 === side3 && side1 + side3 >= side2)) {
-      $(".output").text("Isosceles")
+      $(".output").text("Isosceles");
     }
     else if (side1 + side2 <= side3 || side2 + side3 <= side1 || side1 + side3 <= side2) {
-      $(".output").text("NOT a triangle")
+      $(".output").text("NOT a triangle");
     }
     else if ((side1 != side2 && side1 + side2 > side3 ) || (side2 != side3 && side2 + side3 > side1 ) || (side1 != side3 && side1 + side3 > side2)) {
-      $(".output").text("Scalene")
+      $(".output").text("Scalene");
+    }
+    else {
+      $(".output").text("That is NOT valid input. Please use numbers only.");
     }
 
 
