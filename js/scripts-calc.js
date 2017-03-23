@@ -34,7 +34,7 @@ $(document).ready(function(){
     }else if (operator === "divide") {
       result = divide(number1, number2);
       }
-      $("#output").text(result);
+      $("#output").text(result).toggle().fadeToggle();
 
   });
 });
