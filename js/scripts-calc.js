@@ -16,6 +16,7 @@ var divide = function(number1, number2) {
 // User interface (or front-end) logic:
 
 $(document).ready(function(){
+  $(".content").toggle().fadeToggle(3000);
   $("form#calculator").submit(function() {
     event.preventDefault();
     var number1 = parseFloat($("#input1").val());
